@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecipeHub - All Recipes</title>
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="static/css/landing.css">
+    <link rel="stylesheet" href="static/css/recipes.css" />
+    <link rel="stylesheet" href="static/css/footer.css">
+
+</head>
+<body class="page-recipes">
+
+<header>
+        <div class="header-container">
+            <div class="logo-container" onclick="showPage('home')">
+                <div class="logo">
+                        <span>🍳</span>
+                        <h2>RecipeHub</h2>
+                    </div> 
+            </div>
+			  <i class="fas fa-bars menu-toggle" id="menuToggle"></i>
+            <nav id="mainNav">
+                <a href="index.html" class="active" data-page="home" onclick="showPage('home')">Home</a>
+                <a href="index.html#features" data-page="features" onclick="showPage('features')">Features</a>
+                <a href="recipes.html" data-page="recipes" onclick="showPage('recipes')">Recipes</a>
+                <a href="index.html#stats-section" data-page="faq" onclick="showPage('faq')">FAQ</a>
+            </nav>
+            <a class="btn-primary" href="#" id="openModalBtn">+ Add Recipe</a>
+        </div>
+</header>
+  <div class="max-w-5xl mx-auto mt-8">
+    <!-- SEARCH -->
+    <section class="search-section">
+      <input
+        type="text"
+        id="searchInput"
+        class="search-box"
+        placeholder="Search recipes by name..."
+      />
+    </section>
+
+    <!-- FILTERS -->
+    <section class="filter-section">
+      <div class="category-filters">
+        <button class="filter-btn active" data-category="all">All</button>
+        <button class="filter-btn" data-category="breakfast">Breakfast</button>
+        <button class="filter-btn" data-category="lunch">Lunch</button>
+        <button class="filter-btn" data-category="dinner">Dinner</button>
+        <button class="filter-btn" data-category="dessert">Dessert</button>
+        <button class="filter-btn" data-category="snack">Snack</button>
+        <button class="filter-btn" data-category="beverage">Beverage</button>
+        <button class="filter-btn" data-category="appetizer">Appetizer</button>
+        <button class="filter-btn" data-category="salad">Salad</button>
+      </div>
+    </section>
+
+    <!-- SORT -->
+    <section class="sort-section">
+      <label for="sortBy">Sort by:</label>
+      <select id="sortBy">
+        <option value="date-newest">Newest First</option>
+        <option value="date-oldest">Oldest First</option>
+        <option value="name-az">Name A–Z</option>
+        <option value="name-za">Name Z–A</option>
+      </select>
+    </section>
+
+    <!-- LOADING -->
+    <div class="loading active">
+      <i class="fas fa-spinner fa-spin fa-3x"></i>
+    </div>
+
+    <!-- NO RECIPES FOUND -->
+    <div class="notFound hidden">
+      <i class="fa-solid fa-utensils"></i>
+      <h2>No Recipes Found</h2>
+      <p>Be the first to add a recipe to our collection!</p>
+      <button class="recipeButton">Add Your First Recipe</button>
+    </div>
+
+    <!-- RECIPES LIST TO STORE CARDS -->
+      <div id="recipes-list" class="grid grid-cols-2 sm:grid-cols-3 gap-4"></div>
+      
+      <!-- ADD RECIPE MODAL -->
+      <div id="recipeModal"
+          class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+
+        <div class="bg-white w-full max-w-2xl rounded-lg p-6 relative">
+          <h2 class="text-2xl font-bold mb-4">Add New Recipe</h2>
+
+          <form id="recipeForm" class="space-y-4">
+            <input id="name" placeholder="Recipe name" required class="w-full border p-2 rounded"/>
+
+            <label for="category" class="sr-only">Category</label>
+            <select id="category" class="w-full border p-2 rounded">
+              <option>breakfast</option>
+              <option>lunch</option>
+              <option>dinner</option>
+              <option>dessert</option>
+              <option>snack</option>
+              <option>beverage</option>
+              <option>appetizer</option>
+              <option>salad</option>
+            </select>
+
+            <label for="difficulty" class="sr-only">Category</label>
+            <select id="difficulty" class="w-full border p-2 rounded">
+              <option>easy</option>
+              <option>medium</option>
+              <option>hard</option>
+            </select>
+
+            <div class="flex gap-4">
+              <input id="prepTime" type="number" placeholder="Prep Time" class="border p-2 rounded w-full"/>
+              <input id="servings" type="number" placeholder="Servings" class="border p-2 rounded w-full"/>
+            </div>
+
+            <textarea id="ingredients" placeholder="Ingredients (one per line)"
+                      class="w-full border p-2 rounded"></textarea>
+
+            <textarea id="instructions" placeholder="Instructions (one per line)"
+                      class="w-full border p-2 rounded"></textarea>
+
+            <input id="imageUrl" placeholder="Image URL"
+                  class="w-full border p-2 rounded"/>
+
+            <div class="flex justify-end gap-2">
+              <button type="button" id="cancelBtn"
+                      class="px-4 py-2 border rounded">
+                Cancel
+              </button>
+              <button type="submit"
+                      class="px-4 py-2 bg-red-500 text-white rounded">
+                Add Recipe
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- TOAST -->
+      <div id="toast"
+          class="fixed bottom-6 right-6 bg-green-600 text-white px-4 py-2 rounded hidden">
+        Recipe added successfully!
+      </div>
+  </div>
+  <br>
+ <footer>
+       <div class="newsletter-container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter and get weekly recipe recommendations</p>
+                <div class="newsletter-main">
+                    <div class="newsletter-input-container">
+                        
+                        <input type="email" id="emailSub" placeholder="Enter your email address" required/>
+                    </div>
+                    <button id="newsletter-btn" class="newsletter-btn">Subscribe</button>
+                </div>                    
+            </div>
+            
+       </div> 
+       
+        <div class="footer-content">
+            <div class="merged-col">
+                <div class="footer-logo-container">
+                    <div class="logo">
+                        <span>🍳</span>
+                        <h2>RecipeHub</h2>
+                    </div>    
+                    <p>Your go-to platform for discovering and sharing amazing recipe</p>
+                </div>
+                <div class="footer-lists">
+                    <div class="footer-col">
+                        <h2>Quick Links</h2>
+                        <ul>
+                            <li><a href="recipes.html" data-page="recipes">Recipes</a></li>
+                            <li><a href="#features" data-page="features" onclick="showPage('features')">Features</a></li>
+                            <li><a href="#stats-section" data-page="faq" onclick="showPage('faq')">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h2>Categories</h2>
+                        <ul>
+                            <li><a href="index.html" data-category="breakfast">Breakfast</a></li>
+                            <li><a href="index.html" data-category="lunch">Lunch</a></li>
+                            <li><a href="index.html" data-category="dinner">Dinner</a></li>
+                            <li><a href="index.html"  data-category="desserts">Desserts</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h2>Contacts</h2>
+                        <ul>
+                            <li><a href="https://www.facebook.com/enyinniaclifford">Facebook</a></li>
+                            <li><a href="https://x.com/TEnyinnia6736">Twitter</a></li>             
+                            <li><a href="https://www.instagram.com/glamour_smile_?igsh=Mm45bWUzeDVpOXVw&utm_source=qr">Instagram</a></li>           
+                            <li><a href="https://www.pinterest.com/">Pinterest</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-license">
+                <div class="line"></div>
+                <span class="license">&copy; 2025 RecipeHub. All rights reserved.</span>
+            </div>
+                
+        </div>
+                
+           
+    </footer>
+
+    <script src="static/js/recipes.js"></script>
+    <script src="static/js/add-modal.js"></script>
+    <script src="static/js/newsletter.js"></script>
+</body>
+</html>
+

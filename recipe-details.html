@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="static/css/landing.css">
+    <link rel="stylesheet" href="static/css/footer.css">
+    <link rel="stylesheet" href="static/css/landing.css">
+    <link rel="stylesheet" href="static/css/recipe-detail.css">
+    <title></title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container" onclick="showPage('home')">
+                <div class="logo">
+                    <span>🍳</span>
+                    <h2>RecipeHub</h2>
+                </div>
+            </div>
+			  <i class="fas fa-bars menu-toggle" id="menuToggle"></i>
+            <nav id="mainNav">
+                <a href="index.html" class="active">Home</a>
+                <a href="index.html#features">Features</a>
+                <a href="recipes.html">Recipes</a>
+                <a href="#stats-section" data-page="faq">FAQ</a>
+            </nav>
+            <a href="recipes.html" class="recipe-detail-btn" onclick="showPage('recipes')"><i class="fa-solid fa-arrow-left"></i> Back To Recipe</a>
+        </div>
+</header>
+<main>
+    <section class="recipe-detail">
+        <div class="recipe-detail-container">
+            <div class="recipe-detail-img">
+                <img id="recipe-img">
+                <span class="complexity-badge"></span>
+            </div>
+            <div class="recipe-detail-text">
+                <div class="category-date">
+                    <span class="category-text" id="category-text"></span>
+                    <span class="date-created" id="date-created"></span>
+                </div>
+
+                <span class="recipe-name" id="recipe-name"></span>
+                <div class="recipe-stats">
+                    <div class="preptime-serving-comments prep">
+                        <i class="fa-solid fa-stopwatch"></i>
+                        <div class="prep-time-info">
+                            <h6>PREP TIME</h6>
+                            <div class="prep-time-container">
+                                <span class="prep-time" id="prep-time"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preptime-serving-comments">
+                        <i class="fa-solid fa-utensils"></i>
+                        <div class="recipe-service-info">
+                            <h6>SERVINGS</h6>
+                            <span class="serving-number" id="serving-number"></span>
+                        </div>
+                    </div>
+                    <div class="preptime-serving-comments">
+                        <i class="fa-regular fa-comment"></i>
+                        <div class="recipe-reviews">
+                            <h6>COMMENTS</h6>
+                            <span class="comment-number" id="comment-number"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="action-btns">
+        <div class="action-btns-container">
+            <button id="ingredients">Ingredients</button>
+            <button id="instructions">Instructions</button>
+            <button id="comments">Comments</button>
+        </div>
+    </section>
+    <section class="dynamic-container">
+        <div class="dynamic-ingredients tab-panel" id="dynamic-ingredients"></div>
+        <div class="dynamic-instructions tab-panel" id="dynamic-instructions"></div>
+        <div class="dynamic-comments tab-panel" id="dynamic-comments">
+            <div class="name-underline">
+                 <h3>Comments</h3>
+            </div>
+           
+            <form>
+                 <h4>Leave a comment</h4>
+                <input type="text" placeholder="Your name" id="reviewer"required/>
+                <textarea placeholder="Share your thoughts about this recipe.." id="textarea-comment" required></textarea>
+                <button type="submit" id="post-comment">Post Comment</button>
+            </form>
+            <div class="comments-list" id="comment-lists"></div>
+        </div>
+        
+    </section>
+
+</main> 
+    <script src="static/js/newsletter.js"></script>
+    <script src="static/js/faq.js"></script>
+    <script src="static/js/add-modal.js"></script>
+    <script src="static/js/recipe-detail.js"></script>
+    <script src="static/js/recipes.js"></script>
+</body>
+</html>

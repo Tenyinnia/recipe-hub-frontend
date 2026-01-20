@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecipeHub - Discover Delicious Recipes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/footer.css">
+	<link rel="stylesheet" href="static/css/landing.css">
+    
+</head>
+<body class="page-home">
+
+<header>
+        <div class="header-container">
+            <div class="logo-container" onclick="showPage('home')">
+                <div class="logo">
+                    <span>🍳</span>
+                    <h2>RecipeHub</h2>
+                </div> 
+            </div>
+			  <i class="fas fa-bars menu-toggle" id="menuToggle"></i>
+            <nav id="mainNav">
+                <a href="index.html" class="active" data-page="home" onclick="showPage('home')">Home</a>
+                <a href="#features" data-page="features" onclick="showPage('features')">Features</a>
+                <a href="recipes.html" data-page="recipes">Recipes</a>
+                <a href="#stats-section" data-page="faq" onclick="showPage('faq')">FAQ</a>
+            </nav>
+            <a class="btn-primary" href="recipes.html" onclick="showPage('recipes')">View All Recipes</a>
+        </div>
+</header>
+ <div id="home-page" class="page">
+<section class="hero">
+    <div class="hero-container">
+        <div>
+            <h1>Discover <span>Delicious</span> Recipes</h1>
+            <p>Join a community of food lovers and explore thousands of recipes from around the world.</p>
+            <div class="hero-buttons">
+                <a href="recipes.html" class="btn-primary" data-page="recipes">Explore Recipes</a>
+                <a href="#stats-section"  class="btn-primary" style="background: transparent; color:#ff6b6b; border:2px solid #ff6b6b;">
+                    Learn More
+                </a>
+            </div>
+        </div>
+        <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800" alt="Cooking">
+    </div>
+</section>
+
+ <section class="features" id="features">
+       <div class="features-container">
+        <div class="section-title">
+            <h2>Why Choose RecipeHub?</h2>
+            <p>Everything you need to discover, share, and enjoy great food</p>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon green"><i class="fas fa-book-open"></i></div>
+                <h3>Browse Recipes</h3>
+                <p>Explore recipes from different cuisines and categories.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon blue"><i class="fas fa-search"></i></div>
+                <h3>Smart Search</h3>
+                <p>Quickly find what you want with powerful filters.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon orange"><i class="fas fa-pen"></i></div>
+                <h3>Share Recipes</h3>
+                <p>Upload your own recipes and inspire others.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon purple"><i class="fas fa-comments"></i></div>
+                <h3>Community</h3>
+                <p>Connect with people who love cooking as much as you do.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section class="featured-recipes" id="featured">
+				<div class="section-title">
+                    <h2>Featured Recipes</h2>
+                    <p>Check out some of our most popular recipes</p>
+                </div>
+
+  <div class="carousel">
+    <button class="carousel-btn prev">‹</button>
+
+    <div class="carousel-track-container">
+      <ul class="carousel-track">
+        <li class="carousel-slide">
+          <article class="recipe-card">
+            <img src="images/3.png" alt="Fluffy pancakes">
+            <h3>Fluffy Pancakes</h3>
+            <p>Light and airy pancakes the whole family will love.</p>
+          </article>
+        </li>
+
+        <li class="carousel-slide">
+          <article class="recipe-card">
+            <img src="images/1.png" alt="Berry parfait">
+            <h3>Berry Parfait</h3>
+            <p>Layered berries, yogurt, and granola—perfect for breakfast.</p>
+          </article>
+        </li>
+
+        <li class="carousel-slide">
+          <article class="recipe-card">
+            <img src="images/1.png" alt="Avocado toast">
+            <h3>Avocado Toast</h3>
+            <p>Simple, quick, and delicious—elevate your morning toast.</p>
+          </article>
+        </li>
+      </ul>
+    </div>
+
+    <button class="carousel-btn next">›</button>
+  </div>
+</section>
+
+  <section class="stats-section" id="stats-section">
+    <div class="stats-container">
+        <div class="stat-card">
+        <h2 class="stats-recipe"></h2>
+        <p>RECIPES</p>
+        </div>
+
+        <div class="stat-card">
+        <h2 class="stats-user"></h2>
+        <p>ACTIVE USERS</p>
+        </div>
+
+        <div class="stat-card">
+        <h2 class="stat-category"></h2>
+        <p>CATEGORIES</p>
+        </div>
+
+        <div class="stat-card">
+        <h2 class="stats-comments"></h2>
+        <p>COMMENTS</p>
+        </div>
+    </div>
+    </section>
+
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <p class="faq-subtitle">Everything you need to know about RecipeHub</p>
+
+        <div class="faq-container">
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    How do I add my own recipe?
+                    <span class="icon"></span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                    Simply click on "View All Recipes", then click the "Add Recipe" button.
+                    Fill in all required information including recipe name, category,
+                    ingredients, and instructions. You can also add an image URL to make your recipe more appealing!
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Can I search for specific recipes?
+                    <span class="icon"></span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, of course use the smart search and filters to find recipes quickly. Do you have any specific recipe in mind? if so, just type it in the search bar and we'll show you all matching results! or better yet, use the filters to narrow down your search.</p>
+                </div>
+            </div>
+
+            <div class="faq-item active">
+                <button class="faq-question">
+                    How do I leave comments on recipes?
+                    <span class="icon"></span>
+                </button>
+                <div class="faq-answer">
+                    <p>You can comment directly on a recipe detail page. Are you right there? Feel free to share your thoughts! Our team is here to help you.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Can I delete recipes?
+                    <span class="icon"></span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, you can delete your own recipes from the recipe detail page and as well make any changes to them. Also, you can edit your own recipes from the recipe detail page.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Is RecipeHub free to use?
+                    <span class="icon"></span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes, RecipeHub is completely free to use for all users and easy to navigate for our first time users.Give it a try!</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+       <div class="newsletter-container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter and get weekly recipe recommendations</p>
+                <div class="newsletter-main">
+                    <div class="newsletter-input-container">
+                        
+                        <input type="email" id="emailSub" placeholder="Enter your email address" required/>
+                    </div>
+                    <button id="newsletter-btn" class="newsletter-btn">Subscribe</button>
+                </div>                    
+            </div>
+            
+       </div> 
+       
+        <div class="footer-content">
+            <div class="merged-col">
+                <div class="footer-logo-container">
+                    <div class="logo">
+                        <span>🍳</span>
+                        <h2>RecipeHub</h2>
+                    </div>    
+                    <p>Your go-to platform for discovering and sharing amazing recipe</p>
+                </div>
+                <div class="footer-lists">
+                    <div class="footer-col">
+                        <h2>Quick Links</h2>
+                        <ul>
+                            <li><a href="recipes.html" data-page="recipes">Recipes</a></li>
+                            <li><a href="#features" data-page="features" onclick="showPage('features')">Features</a></li>
+                            <li><a href="#stats-section" data-page="faq" onclick="showPage('faq')">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h2>Categories</h2>
+                        <ul>
+                            
+                            <li><a href="recipes.html" data-category="breakfast">Breakfast</a></li>
+                            <li><a href="recipes.html" data-category="lunch">Lunch</a></li>
+                            <li><a href="recipes.html" data-category="dinner">Dinner</a></li>
+                            <li><a href="recipes.html"  data-category="desserts">Desserts</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h2>Contacts</h2>
+                        <ul>
+                            <li><a href="https://www.facebook.com/enyinniaclifford">Facebook</a></li>
+                            <li><a href="https://x.com/TEnyinnia6736">Twitter</a></li>             
+                            <li><a href="https://www.instagram.com/glamour_smile_?igsh=Mm45bWUzeDVpOXVw&utm_source=qr">Instagram</a></li>           
+                            <li><a href="https://www.pinterest.com/">Pinterest</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-license">
+                <div class="line"></div>
+                <span class="license">&copy; 2025 RecipeHub. All rights reserved.</span>
+            </div>
+                
+        </div>
+                
+           
+    </footer>
+
+<script src="static/js/featured-carousel.js" defer></script>
+<script src="static/js/landing.js"></script>
+ <script src="static/js/newsletter.js"></script>    
+<script src="static/js/faq.js"></script>
+
+</body>
+</html>

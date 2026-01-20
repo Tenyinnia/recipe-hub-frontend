@@ -1,0 +1,197 @@
+{
+  "recipes": [
+    {
+      "id": "1",
+      "name": "Classic Pancakes",
+      "category": "breakfast",
+      "prepTime": 20,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": "2 cups all-purpose flour\n3 tablespoons sugar\n2 teaspoons baking powder\n1 teaspoon salt\n2 eggs\n1.5 cups milk\n2 tablespoons melted butter",
+      "instructions": "1. Mix dry ingredients in a large bowl\n2. Whisk eggs, milk, and melted butter in another bowl\n3. Pour wet ingredients into dry ingredients and mix until just combined\n4. Heat a griddle over medium heat\n5. Pour 1/4 cup batter for each pancake\n6. Cook until bubbles form, then flip and cook until golden",
+      "imageUrl": "https://images.unsplash.com/photo-1528207776546-365bb710ee93?w=500",
+      "createdAt": "2024-12-20T10:00:00Z"
+    },
+    {
+      "id": "2",
+      "name": "Avocado Toast",
+      "category": "breakfast",
+      "prepTime": 10,
+      "servings": 2,
+      "difficulty": "easy",
+      "ingredients": "2 ripe avocados\n4 slices whole grain bread\n1 lemon\n2 cloves garlic\nSalt and pepper to taste\nRed pepper flakes (optional)",
+      "instructions": "1. Toast bread slices until golden brown\n2. Mash avocados in a bowl with a fork\n3. Add juice from half a lemon, minced garlic, salt and pepper\n4. Spread avocado mixture evenly on toast\n5. Sprinkle with red pepper flakes if desired",
+      "imageUrl": "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=500",
+      "createdAt": "2024-12-18T08:30:00Z"
+    },
+    {
+      "id": "3",
+      "name": "Caesar Salad",
+      "category": "salad",
+      "prepTime": 15,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": "1 large romaine lettuce\n1/2 cup Parmesan cheese\n1 cup croutons\n1/2 cup Caesar dressing\n2 anchovy fillets (optional)\n1 lemon",
+      "instructions": "1. Wash and chop romaine lettuce\n2. Toss lettuce with Caesar dressing in a large bowl\n3. Add croutons and toss gently\n4. Shave Parmesan cheese over the top\n5. Squeeze fresh lemon juice before serving",
+      "imageUrl": "https://images.unsplash.com/photo-1546793665-c74683f339c1?w=500",
+      "createdAt": "2024-12-15T12:00:00Z"
+    },
+    {
+      "id": "4",
+      "name": "Spaghetti Carbonara",
+      "category": "dinner",
+      "prepTime": 30,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": "400g spaghetti\n200g pancetta or guanciale\n4 large eggs\n1 cup Pecorino Romano cheese\nFreshly ground black pepper\nSalt",
+      "instructions": "1. Cook spaghetti in salted boiling water\n2. While pasta cooks, fry pancetta until crispy\n3. Beat eggs with grated cheese and black pepper\n4. Drain pasta, reserving some pasta water\n5. Quickly mix hot pasta with pancetta, then add egg mixture\n6. Stir vigorously to create creamy sauce",
+      "imageUrl": "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=500",
+      "createdAt": "2024-12-10T19:45:00Z"
+    },
+    {
+      "id": "5",
+      "name": "Chocolate Chip Cookies",
+      "category": "dessert",
+      "prepTime": 25,
+      "servings": 24,
+      "difficulty": "easy",
+      "ingredients": "2 1/4 cups all-purpose flour\n1 teaspoon baking soda\n1 teaspoon salt\n1 cup butter, softened\n3/4 cup granulated sugar\n3/4 cup packed brown sugar\n2 large eggs\n2 cups chocolate chips\n1 teaspoon vanilla extract",
+      "instructions": "1. Preheat oven to 375°F (190°C)\n2. Mix flour, baking soda and salt in a bowl\n3. Beat butter and sugars until creamy\n4. Add eggs and vanilla, beat well\n5. Gradually beat in flour mixture\n6. Stir in chocolate chips\n7. Drop rounded tablespoons onto ungreased baking sheets\n8. Bake 9-11 minutes until golden brown",
+      "imageUrl": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=500",
+      "createdAt": "2024-12-05T14:20:00Z"
+    },
+    {
+      "id": "6",
+      "name": "Chicken Stir Fry",
+      "category": "dinner",
+      "prepTime": 25,
+      "servings": 4,
+      "difficulty": "medium",
+      "ingredients": "500g chicken breast\n2 bell peppers\n1 onion\n2 carrots\n3 cloves garlic\n2 tablespoons soy sauce\n1 tablespoon sesame oil\n1 tablespoon cornstarch\n1/4 cup chicken broth",
+      "instructions": "1. Cut chicken into bite-sized pieces\n2. Slice vegetables into thin strips\n3. Heat oil in wok or large pan\n4. Stir-fry chicken until cooked through, remove\n5. Stir-fry vegetables until tender-crisp\n6. Mix soy sauce, cornstarch and broth\n7. Return chicken to pan, add sauce and cook until thickened",
+      "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500",
+      "createdAt": "2024-12-01T17:30:00Z"
+    },
+    {
+      "id": "7",
+      "name": "Smoothie Bowl",
+      "category": "breakfast",
+      "prepTime": 10,
+      "servings": 2,
+      "difficulty": "easy",
+      "ingredients": "2 frozen bananas\n1 cup frozen berries\n1/2 cup Greek yogurt\n1/4 cup milk or almond milk\nToppings: granola, chia seeds, fresh fruit, coconut flakes",
+      "instructions": "1. Blend frozen bananas, berries, yogurt and milk until smooth\n2. Pour into bowls\n3. Top with granola, chia seeds, fresh fruit and coconut flakes\n4. Serve immediately",
+      "imageUrl": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=500",
+      "createdAt": "2024-11-28T09:15:00Z"
+    },
+    {
+      "id": "8",
+      "name": "Guacamole",
+      "category": "appetizer",
+      "prepTime": 15,
+      "servings": 6,
+      "difficulty": "easy",
+      "ingredients": "3 ripe avocados\n1 lime\n1/2 red onion\n1 tomato\n1 jalapeño pepper\n1/4 cup cilantro\nSalt to taste",
+      "instructions": "1. Cut avocados in half, remove pits and scoop flesh into bowl\n2. Mash with fork to desired consistency\n3. Finely chop onion, tomato, jalapeño and cilantro\n4. Mix all ingredients together\n5. Add lime juice and salt to taste",
+      "imageUrl": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=500",
+      "createdAt": "2024-11-25T16:45:00Z"
+    },
+    {
+      "id": "9",
+      "name": "Lemonade",
+      "category": "beverage",
+      "prepTime": 10,
+      "servings": 8,
+      "difficulty": "easy",
+      "ingredients": "1 cup fresh lemon juice (about 6 lemons)\n1 cup sugar\n6 cups cold water\nIce cubes\nLemon slices and mint for garnish",
+      "instructions": "1. Juice the lemons to get 1 cup of lemon juice\n2. In a pitcher, dissolve sugar in 1 cup of warm water\n3. Add lemon juice and remaining cold water\n4. Stir well and chill\n5. Serve over ice with lemon slices and mint",
+      "imageUrl": "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=500",
+      "createdAt": "2024-11-20T13:00:00Z"
+    },
+    {
+      "id": "10",
+      "name": "Greek Salad",
+      "category": "salad",
+      "prepTime": 20,
+      "servings": 4,
+      "difficulty": "easy",
+      "ingredients": "4 tomatoes\n1 cucumber\n1 red onion\n1 green bell pepper\n200g feta cheese\nKalamata olives\nOlive oil\nOregano\nSalt and pepper",
+      "instructions": "1. Chop tomatoes, cucumber, onion and bell pepper into chunks\n2. Cut feta cheese into cubes\n3. Combine all vegetables, feta and olives in a bowl\n4. Drizzle with olive oil, sprinkle with oregano, salt and pepper\n5. Toss gently and serve",
+      "imageUrl": "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=500",
+      "createdAt": "2024-11-18T11:30:00Z"
+    },
+    {
+      "id": "6bb2",
+      "name": "Noodles",
+      "category": "lunch",
+      "difficulty": "easy",
+      "prepTime": 3,
+      "servings": 2,
+      "ingredients": "1 pack noodles (any type you like)\n1 tbsp oil\n1/2 cup sliced onion\n1/2 cup bell pepper, sliced\n1/2 cup carrots, sliced\n1 cup shredded cabbage\nSalt & pepper to taste\n",
+      "instructions": "Cook noodles according to package instructions\nHeat oil in a large pan and sauté garlic and onion until fragrant.\nAdd bell pepper, carrots, and cabbage; cook until vegetables are tender.\nMix soy sauce, oyster sauce (if using), sugar, salt, and pepper.\nToss the cooked noodles with the vegetables and sauce until evenly coated.\nServe hot — garnish with spring onions or sesame seeds if you like.\n\n\n",
+      "imageUrl": "https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=800&…",
+      "createdAt": "2026-01-10T11:44:59.857Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "recipeId": 1,
+      "author": "John Doe",
+      "text": "Amazing recipe! My family loved it.",
+      "createdAt": "2024-12-21T14:30:00Z"
+    },
+    {
+      "id": "2",
+      "recipeId": 1,
+      "author": "Sarah Miller",
+      "text": "Perfect Sunday breakfast! Added blueberries to the batter.",
+      "createdAt": "2024-12-22T09:15:00Z"
+    },
+    {
+      "id": "3",
+      "recipeId": 4,
+      "author": "Chef Marco",
+      "text": "Authentic Italian recipe! Just like my grandmother used to make.",
+      "createdAt": "2024-12-11T20:30:00Z"
+    },
+    {
+      "id": "4",
+      "recipeId": 5,
+      "author": "BakerTom",
+      "text": "Best chocolate chip cookies ever! Crispy edges and chewy center.",
+      "createdAt": "2024-12-06T16:45:00Z"
+    },
+    {
+      "id": "5",
+      "recipeId": 7,
+      "author": "Enyinnia Clifford",
+      "text": "I like this",
+      "createdAt": "2026-01-20T06:48:57.052Z"
+    },
+    {
+      "id": "6",
+      "recipeId": 1,
+      "author": "Enyinnia Clifford",
+      "text": "I also like this",
+      "createdAt": "2026-01-20T06:58:54.824Z"
+    }
+  ],
+  "newsletter": [
+    {
+      "id": "1",
+      "email": "user@example.com",
+      "subscribedAt": "2024-12-22T08:00:00Z"
+    },
+    {
+      "id": "2",
+      "email": "foodlover@gmail.com",
+      "subscribedAt": "2024-12-23T10:30:00Z"
+    },
+    {
+      "id": "3",
+      "email": "enyinniatochi@gmail.com",
+      "subscribedAt": "2026-01-20T06:49:26.964Z"
+    }
+  ]
+}
